@@ -19,3 +19,21 @@ if (task3 === "Make dinner"){
 }else{
     console.log("Incomplete")
 }
+//Need help here
+let tasks = [task1, task2, task3]
+
+let tasks = [task1, task2, task3]
+
+//write a for loop that will print each of the tasks in the tasks array
+//intermediate challenge: implement the above if statement into that for loop
+for(let i = 0; i < tasks.length; i++) {
+  let string = tasks[i]
+
+  if(tasks[i] === 'Make dinner') {
+    string += ' - Complete'
+  } else {
+    string += ' - Incomplete'
+  }
+
+  console.log(string)
+}
